@@ -1,247 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="phonestyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <title>Personal Portfolio Website</title>
-    <link rel = "icon" href = 
-"C:\Users\Dell\Desktop\JS-basics\JS-basics\titlelogo.jpg" 
-        type = "image/x-icon">
-
-        <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-
+    <title>Sini Thazhthe Pallath | Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-  <section id="header">
-    <div class = "container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">SINI</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Skills</a>
-              <a class="nav-link " href="#" tabindex="-1">Contact</a>
-              <div class="bubble"></div>
+
+<body data-lang="en">
+
+    <header>
+        <a href="#" class="logo">S</a>
+        <nav class="nav-links">
+            <a href="#about"><span class="lang-en">About</span><span class="lang-fr">À Propos</span></a>
+            <a href="#skills"><span class="lang-en">Expertise</span><span class="lang-fr">Expertise</span></a>
+            <a href="#projects"><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></a>
+            <a href="#contact"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a>
+            <button id="lang-toggle" class="lang-toggle-btn">FR | EN</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="fade-in">
+            <p class="hero-subtitle">
+                <span class="lang-en">Securing the digital frontier,</span>
+                <span class="lang-fr">Sécuriser la frontière numérique,</span>
+            </p>
+            <h1 class="hero-title">Sini Thazhthe Pallath.</h1>
+            <h2 class="hero-description">
+                <span class="lang-en">I build resilient, threat-proof systems.</span>
+                <span class="lang-fr">Je bâtis des systèmes résilients et sécurisés.</span>
+            </h2>
+            <p class="hero-text">
+                <span class="lang-en">Cybersecurity Master's Student at <strong>IMT Atlantique</strong> & former
+                    <strong>Software Developer at Bank of America</strong>. Specialized in DevSecOps, Infrastructure
+                    Hardening, and AI-Driven Threat Detection.</span>
+                <span class="lang-fr">Étudiant en Master de Cybersécurité à l'<strong>IMT Atlantique</strong> & ancien
+                    <strong>Développeur Logiciel chez Bank of America</strong>. Spécialisé en DevSecOps, Durcissement
+                    d'infrastructure et Détection de menaces par l'IA.</span>
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <a href="#projects" class="cta-btn hero-cta">
+                    <span class="lang-en">View My Work</span>
+                    <span class="lang-fr">Voir mes Projets</span>
+                </a>
             </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </section>
-  <section class = "main">
-    <div class = "container">
-      <div class = "row">
-        <div class="col-sm-6">
-          
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <section class="aboutme" id= "about">
-    <!----<h2 class ="section-title">ABOUT</h2>--->
-    <div class="about_container bd-grid">
-      <div>
-        <h6 class="hello">Hello there!!</h6>
-        <h2 class="about__subtitle"> I change manual efforts into codes !! </h2>
-        <h5 class="aim"> Aiming to be more than just an IT employee</h5>
-      </div>
-  </div>
-  </section>
-
-  <section class = "main1">
-    <div class = "container">
-      <div class = "row">
-        <div class="col-sm-6">
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="skills section" id="skills">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills__container bd-grid">          
-        <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bxl-html5 skills__icon'></i>
-                    <span class="skills__name">HTML5</span>
-                </div>
-                <div class="skills__bar skills__html">
-
-                </div>
-                <div>
-                    <span class="skills__percentage">95%</span>
-                </div>
+        <!-- About Section -->
+        <section id="about" class="fade-in">
+            <div class="section-title">
+                <span class="lang-en">01. Mission / About</span>
+                <span class="lang-fr">01. Mission / À Propos</span>
             </div>
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bxl-css3 skills__icon'></i>
-                    <span class="skills__name">CSS3</span>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        <span class="lang-en">I am a cybersecurity engineer dedicated to the intersection of
+                            <strong>Software Engineering and Cyber Defense</strong>. With 2.5 years of experience at
+                            Bank of America, I've seen firsthand how critical robust security automation is to global
+                            financial stability.</span>
+                        <span class="lang-fr">Je suis un ingénieur en cybersécurité dédié à l'intersection de
+                            l'<strong>Ingénierie Logicielle et de la Cyberdéfense</strong>. Avec 2,5 ans d'expérience
+                            chez Bank of America, j'ai constaté l'importance cruciale de l'automatisation de la
+                            sécurité.</span>
+                    </p>
+                    <p>
+                        <span class="lang-en">Currently pursuing an <strong>MSc in Cybersecurity</strong>, I focus on
+                            <strong>Intent-Based Security</strong> and <strong>GenAI-driven threat hunting</strong>. I
+                            bridge the gap between development speed and security integrity.</span>
+                        <span class="lang-fr">Actuellement engagé dans un <strong>Master en Cybersécurité</strong>, je
+                            me concentre sur la <strong>Sécurité Basée sur l'Intention</strong> et la <strong>Chasse aux
+                                Menaces via l'IA</strong>. Je comble le fossé entre agilité et intégrité.</span>
+                    </p>
                 </div>
-                <div class="skills__bar skills__css">
-                    
-                </div>
-                <div>
-                    <span class="skills__percentage">85%</span>
+                <div class="about-img-container">
+                    <img src="sini1.png" alt="Sini" class="about-img">
                 </div>
             </div>
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bxl-javascript skills__icon' ></i>
-                    <span class="skills__name">JAVASCRIPT</span>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="fade-in">
+            <div class="section-title">
+                <span class="lang-en">02. Technical Profile & Expertise</span>
+                <span class="lang-fr">02. Profil Technique & Expertise</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="lang-en">Core Techniques</h3>
+                    <h3 class="lang-fr">Techniques Clés</h3>
+                    <ul>
+                        <li>Python, Bash, SQL, Linux</li>
+                        <li>Git, React.js, Flask</li>
+                        <li>Shell Hardening / Durcissement</li>
+                    </ul>
                 </div>
-                <div class="skills__bar skills__js">
-                    
+                <div class="skill-category">
+                    <h3 class="lang-en">Cloud & DevSecOps</h3>
+                    <h3 class="lang-fr">Cloud & DevSecOps</h3>
+                    <ul>
+                        <li>Terraform, Ansible (IaC)</li>
+                        <li>Docker, Kubernetes (K8s)</li>
+                        <li>CI/CD (GitHub Actions, Jenkins)</li>
+                        <li>Azure, AWS Security</li>
+                    </ul>
                 </div>
-                <div>
-                    <span class="skills__percentage">65%</span>
+                <div class="skill-category">
+                    <h3 class="lang-en">Cybersecurity Ops</h3>
+                    <h3 class="lang-fr">Opérations Cyber</h3>
+                    <ul>
+                        <li>SIEM (Splunk), SOC Ops</li>
+                        <li>Incident Response Protocols</li>
+                        <li>Vulnerability Management</li>
+                        <li>IAM, Encryption / Chiffrement</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="lang-en">Project / Languages</h3>
+                    <h3 class="lang-fr">Gestion / Langues</h3>
+                    <ul>
+                        <li class="accent-li">English & French (Pro)</li>
+                        <li>Agile/Scrum, Documentation</li>
+                        <li>Google Cybersecurity Cert</li>
+                        <li class="accent-li">CompTIA Security+ (Planned)</li>
+                    </ul>
                 </div>
             </div>
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bxs-paint skills__icon'></i>
-                    <span class="skills__name">Python</span>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="fade-in">
+            <div class="section-title">
+                <span class="lang-en">03. Security Research & Projects</span>
+                <span class="lang-fr">03. Recherche & Projets de Sécurité</span>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-status"><span class="lang-en">[ STATUS: SECURE ]</span><span class="lang-fr">[
+                            STATUT: SÉCURISÉ ]</span></span>
                 </div>
-                <div class="skills__bar skills__ux">
-                    
-                </div>
-                <div>
-                    <span class="skills__percentage">95%</span>
+                <div class="project-content">
+                    <h3 class="project-title">Intent-Based Container Security</h3>
+                    <p class="project-description">
+                        <span class="lang-en">A revolutionary security framework that translates high-level Natural
+                            Language "intents" into dynamic <strong>iptables</strong> and <strong>Firewalld</strong>
+                            policies. Includes real-time AI drift detection for containerized workloads.</span>
+                        <span class="lang-fr">Un framework de sécurité révolutionnaire qui traduit les "intentions" en
+                            langage naturel en politiques dynamiques <strong>iptables</strong> et
+                            <strong>Firewalld</strong>. Inclut une détection de dérive par l'IA en temps réel.</span>
+                    </p>
+                    <ul class="project-tech-list">
+                        <li>Python</li>
+                        <li>Docker</li>
+                        <li>NLP (Spacy)</li>
+                        <li>Security-as-Code</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/sini-kannan/intent-based-security" target="_blank"
+                            title="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-</div>
-</section>
 
-<section class="resume">
-  <div id = "resume-id" class="exp" >
-    <h2 class="font_4" style= "font-size: 30px;">Resume
-    <a href="file:///C:/Users/Dell/Desktop/files/SiniTP_Resume.pdf" >
-      <button type="button" class="btn btn-success">Download CV</button></a>
-    </h2>
-  </div>
-  <div class="card-group">
-    <div class="card text-white bg-dark mb-3">
-      <img src="school.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h3 class="card-title">School</h3>
-        <p class="card-text">Senior Secondary (XII), Science
-          Velammal Vidhyashram
-          (CBSE board)
-          Year of completion: 2018
-          Secondary (X)
-          Velammal Vidhyashram
-          (CBSE board)
-          Year of completion: 2016</p>
-      </div>
-    </div>
-    <div class="card text-dark bg-warning mb-3">
-      <img src="college.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h3 class="card-title">College</h3>
-        <p class="card-text">Bachelor of Engineering (B.E), Computer Science
-          Sathyabama University
-          2018 - 2022</p>
-      </div>
-    </div>
-    <div class="card text-white bg-dark mb-3" style="width: 18rem;">
-      <img src="lang.png" class="card-img-top" alt="...">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item text-dark bg-warning mb-3"><h3>Languages known</h3></li>
-        <li class="list-group-item text-white bg-dark mb-3">English</li>
-        <li class="list-group-item text-dark bg-warning mb-3">Hindi</li>
-        <li class="list-group-item text-white bg-dark mb-3">Tamil</li>
-        <li class="list-group-item text-dark bg-warning mb-3">Malayalam</li>
-      </ul>
-    </div>
-  </div>
-  
-</section>
+            <!-- Project 2 -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-status"><span class="lang-en">[ STATUS: ENCRYPTED ]</span><span
+                            class="lang-fr">[ STATUT: CHIFFRÉ ]</span></span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Secure Cloud Infrastructure (IaC)</h3>
+                    <p class="project-description">
+                        <span class="lang-en">Hardened Azure architecture deployed via <strong>Terraform</strong>.
+                            Implements hub-spoke networking, encrypted storage, and automated compliance checking
+                            integrated with <strong>GitHub Actions</strong>.</span>
+                        <span class="lang-fr">Architecture Azure durcie déployée via <strong>Terraform</strong>.
+                            Implémente un réseau hub-spoke, un stockage chiffré et une vérification de conformité
+                            automatisée via <strong>GitHub Actions</strong>.</span>
+                    </p>
+                    <ul class="project-tech-list">
+                        <li>Terraform</li>
+                        <li>Azure Security</li>
+                        <li>DevSecOps</li>
+                        <li>CI/CD</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/sini-kannan/cloud-infrastructure-automation" target="_blank"
+                            title="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
 
-<section class="projects">
-  <div class="zaya">
-    <h2>Zaya - The Desktop Assistant</h2>
-  </div>
-  <div class="container">
-    <div class="row row-cols-4">
-      <div class="col">
-        <div class="video">
-          <video width="500" height="500" controls>
-            <source src="zayademo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-      <div class="col1"><p>
-        ZAYA is another virtual assistant which is made to do basic day-to-day routines, using voice recognition inspired by JARVIS </p></div>
-        
-        <div class="col2">
-          <div class="card5" style="width: 15rem;">
-          <img src="zayalogo.png" class="card-img-top" alt="...">
+            <!-- Project 3 -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-status"><span class="lang-en">[ STATUS: ANALYZING ]</span><span
+                            class="lang-fr">[ STATUT: ANALYSE ]</span></span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Network Anomaly Detector</h3>
+                    <p class="project-description">
+                        <span class="lang-en">Real-time packet analysis tool to detect unusual traffic patterns and
+                            potential DDoS signatures using heuristic signals and behavioral analysis.</span>
+                        <span class="lang-fr">Outil d'analyse de paquets en temps réel pour détecter les schémas de
+                            trafic inhabituels et les signatures DDoS potentielles via des signaux heuristiques.</span>
+                    </p>
+                    <ul class="project-tech-list">
+                        <li>Python</li>
+                        <li>Scapy</li>
+                        <li>Network Security</li>
+                        <li>Traffic Analysis</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/sini-kannan/network-anomaly-detector" target="_blank"
+                            title="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
 
-          <div class="card-body">
-            <h5 class="card-title">Python Based Project</h5>
-            <p class="card-text">Many python libraries are used to make this duplicate of Jarvis.</p>
-          </div>
-          <div class="card-body">
-            <a href="https://github.com/sini-kannan/Zaya---Desktop-Assitant-Python" class="card-link">Zaya Code in Github</a>
-          </div>
-    </div></div>
-      </div>
-        
-    
-    
-  </div>
-  
+            <!-- Project 4 -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-status"><span class="lang-en">[ STATUS: ACTIVE ]</span><span class="lang-fr">[
+                            STATUT: ACTIF ]</span></span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">PhishShield AI</h3>
+                    <p class="project-description">
+                        <span class="lang-en">Machine Learning defensive model trained to identify multi-stage phishing
+                            URLs and malicious attachment flows with high precision.</span>
+                        <span class="lang-fr">Modèle défensif de Machine Learning entraîné pour identifier les URL de
+                            phishing multi-étapes et les flux de pièces jointes malveillantes avec une haute
+                            précision.</span>
+                    </p>
+                    <ul class="project-tech-list">
+                        <li>ML (Scikit-learn)</li>
+                        <li>Python</li>
+                        <li>Threat Intel</li>
+                        <li>Feature Engineering</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/sini-kannan/Phishing-Detection" target="_blank"
+                            title="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
 
-</section>
-<section class = "main2">
-  <div class = "container">
-    <div class = "row">
-      <div class="col-sm-6">
-        
-      </div>
-    </div>
-  </div>
-</section>
+            <!-- Project 5 -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-status"><span class="lang-en">[ STATUS: SECURE ]</span><span class="lang-fr">[
+                            STATUT: SÉCURISÉ ]</span></span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Malicious URL Analyzer</h3>
+                    <p class="project-description">
+                        <span class="lang-en">Heuristic analysis engine for identifying malware-distribution domains
+                            using behavioral signals and domain reputation monitoring.</span>
+                        <span class="lang-fr">Moteur d'analyse heuristique pour identifier les domaines de distribution
+                            de malwares via des signaux comportementaux et la réputation des domaines.</span>
+                    </p>
+                    <ul class="project-tech-list">
+                        <li>Python</li>
+                        <li>Regex</li>
+                        <li>Security Analytics</li>
+                        <li>Cyber Defense</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/sini-kannan/Malicious-Website-Detector" target="_blank"
+                            title="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="contact">
-  <div class = 'container'>
-    <h3 class="contacttext"> You can find me in</h3>
-    <div class="row services">
-      <div class = "col-md-3 text-center">
-        <div class = "icon">
-         <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
-         <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-         <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
-         <a href="https://github.com/sini-kannan"><i class="fa fa-github"></i></a>
-        </div>
-      </div>
+        <!-- Contact -->
+        <section id="contact" class="fade-in">
+            <div class="section-title" style="justify-content: center;">
+                <span class="lang-en">04. Establish Secure Connection</span>
+                <span class="lang-fr">04. Établir une Connexion Sécurisée</span>
+            </div>
+            <div class="contact-wrap">
+                <p>
+                    <span class="lang-en">I am actively seeking a 6-month Cybersecurity Internship starting July 2026.
+                        Let's build a more resilient future together.</span>
+                    <span class="lang-fr">Je recherche activement un stage de 6 mois en cybersécurité dès juillet 2026.
+                        Bâtissons ensemble un avenir plus résilient.</span>
+                </p>
+                <div class="contact-buttons">
+                    <a href="mailto:sini.thazhthe-pallath@imt-atlantique.net" class="cta-btn small"><i
+                            class="fas fa-envelope"></i> Email</a>
+                    <a href="https://github.com/sini-kannan" target="_blank" class="cta-btn small"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sini-thazhthe-pallath" target="_blank" class="cta-btn small"><i
+                            class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </section>
 
-    </div>
-  </div>
-</section>
+    </main>
 
+    <footer>
+        <p class="lang-en">Built by Sini TP | 2025 | Securing the Digital World</p>
+        <p class="lang-fr">Conçu par Sini TP | 2025 | Sécuriser le Monde Numérique</p>
+    </footer>
 
-
-
-  
-  <script src="sini.js"></script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
