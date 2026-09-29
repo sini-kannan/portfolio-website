@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sini Thazhthe Pallath | Cybersecurity Specialist</title>
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -83,7 +83,10 @@
             
             <div class="experience-card orange-card">
                 <div class="experience-content">
-                    <h3 class="experience-title">Prompt Engineering Intern <span class="company">@ Orange Cyberdefense</span></h3>
+                    <div class="experience-header">
+                        <img src="https://logo.clearbit.com/orangecyberdefense.com" alt="Orange Logo" class="company-logo" onerror="this.style.display='none'">
+                        <h3 class="experience-title">Prompt Engineering Intern <span class="company">@ Orange Cyberdefense</span></h3>
+                    </div>
                     <p class="experience-date">June 2026 – Present</p>
                     <ul class="experience-details">
                         <li class="lang-en">Developed OLAF, a GenAI assistant for SOC incident triage and ServiceNow integration (Python, FastAPI, Docker, LLM).</li>
@@ -108,7 +111,10 @@
             </div>
 
             <div class="experience-card">
-                <h3 class="experience-title">Software Engineer <span class="company">@ Bank of America</span></h3>
+                <div class="experience-header">
+                    <img src="https://logo.clearbit.com/bankofamerica.com" alt="BoA Logo" class="company-logo" onerror="this.style.display='none'">
+                    <h3 class="experience-title">Software Engineer <span class="company">@ Bank of America</span></h3>
+                </div>
                 <p class="experience-date">Sept 2022 – Jan 2025</p>
                 <ul class="experience-details">
                     <li class="lang-en">Automated production monitoring, data validation, and incident analysis using Python, SQL, and Bash.</li>
@@ -129,41 +135,54 @@
                 <span class="lang-en">03. Technical Profile & Expertise</span>
                 <span class="lang-fr">03. Profil Technique & Expertise</span>
             </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="lang-en">DevSecOps & Automation</h3>
-                    <h3 class="lang-fr">DevSecOps & Automatisation</h3>
-                    <ul>
-                        <li>GitLab CI/CD, Pipelines</li>
-                        <li>Security Testing, Python, Bash</li>
-                    </ul>
+            
+            <div class="skills-interactive">
+                <div class="skills-tabs">
+                    <button class="tab-btn active" onclick="openSkillTab(event, 'devsecops')">DevSecOps & Cloud</button>
+                    <button class="tab-btn" onclick="openSkillTab(event, 'security')">Security & Ops</button>
+                    <button class="tab-btn" onclick="openSkillTab(event, 'dev-ai')">Dev & AI</button>
                 </div>
-                <div class="skill-category">
-                    <h3 class="lang-en">Systems & Containerization</h3>
-                    <h3 class="lang-fr">Systèmes & Conteneurisation</h3>
-                    <ul>
-                        <li>Linux, Windows</li>
-                        <li>Docker, Kubernetes</li>
-                        <li>Terraform, Azure, AWS</li>
-                    </ul>
+                
+                <div id="devsecops" class="tab-content active">
+                    <div class="skill-badges">
+                        <span class="badge">GitLab CI/CD</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">Kubernetes</span>
+                        <span class="badge">Terraform</span>
+                        <span class="badge">Azure</span>
+                        <span class="badge">AWS</span>
+                        <span class="badge">Linux</span>
+                        <span class="badge">Windows</span>
+                        <span class="badge">Bash</span>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3 class="lang-en">Security & Monitoring</h3>
-                    <h3 class="lang-fr">Sécurité & Supervision</h3>
-                    <ul>
-                        <li>Zero Trust, OAuth 2.0, JWT, RBAC</li>
-                        <li>API Security, Audit Logging</li>
-                        <li>OpenTelemetry, Anomaly Detection</li>
-                    </ul>
+                
+                <div id="security" class="tab-content">
+                    <div class="skill-badges">
+                        <span class="badge">Zero Trust</span>
+                        <span class="badge">OAuth 2.0 / JWT</span>
+                        <span class="badge">RBAC</span>
+                        <span class="badge">API Security</span>
+                        <span class="badge">OpenTelemetry</span>
+                        <span class="badge">Incident Response</span>
+                        <span class="badge">iptables</span>
+                        <span class="badge">Scapy</span>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3 class="lang-en">Dev & AI Automation</h3>
-                    <h3 class="lang-fr">Dév & IA Appliquée</h3>
-                    <ul>
-                        <li>Python, SQL, FastAPI, REST</li>
-                        <li>ServiceNow/ITSM Integration</li>
-                        <li>LLM, RAG, Agentic Workflows</li>
-                    </ul>
+
+                <div id="dev-ai" class="tab-content">
+                    <div class="skill-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">Go</span>
+                        <span class="badge">SQL</span>
+                        <span class="badge">FastAPI</span>
+                        <span class="badge">ServiceNow ITSM</span>
+                        <span class="badge">LLM & RAG</span>
+                        <span class="badge">LangChain</span>
+                        <span class="badge">LangGraph</span>
+                        <span class="badge">Scikit-learn</span>
+                        <span class="badge">NLP (Spacy)</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -283,7 +302,7 @@
         <p class="lang-fr">Conçu par Sini TP | 2025 | Sécuriser le Monde Numérique</p>
     </footer>
 
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=5"></script>
 </body>
 
 </html>
