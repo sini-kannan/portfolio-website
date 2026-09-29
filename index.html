@@ -96,10 +96,14 @@
                         <li class="lang-fr">Mis en œuvre des contrôles de sécurité et d'observabilité (OAuth 2.0, JWT/RBAC, cloisonnement des données, audit, tests) et contribué au déploiement via GitLab CI/CD.</li>
                     </ul>
                 </div>
-                <div class="experience-gallery">
-                    <img src="orange_photo1.jpg" alt="Orange Cyberdefense Work">
-                    <img src="orange_photo2.jpg" alt="Orange Cyberdefense Office">
-                    <img src="orange_photo3.jpg" alt="Orange Cyberdefense Selfie">
+                <div class="experience-gallery" onclick="nextOrangeImage()">
+                    <img id="orange-slider" src="orange_photo1.jpg" alt="Orange Cyberdefense">
+                    <div class="gallery-indicator">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="gallery-hint"><i class="fas fa-hand-pointer"></i> Click to change photo</div>
                 </div>
             </div>
 

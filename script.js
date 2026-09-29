@@ -35,3 +35,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 });
+
+
+// Orange Cyberdefense Image Slider
+const orangePhotos = ["orange_photo1.jpg", "orange_photo2.jpg", "orange_photo3.jpg"];
+let currentPhotoIdx = 0;
+
+function nextOrangeImage() {
+    const img = document.getElementById("orange-slider");
+    const dots = document.querySelectorAll(".gallery-indicator .dot");
+    
+    img.style.opacity = 0;
+    
+    setTimeout(() => {
+        currentPhotoIdx = (currentPhotoIdx + 1) % orangePhotos.length;
+        img.src = orangePhotos[currentPhotoIdx];
+        
+        dots.forEach((dot, idx) => {
+            if (idx === currentPhotoIdx) {
+                dot.classList.add("active");
+            } else {
+                dot.classList.remove("active");
+            }
+        });
+        
+        img.style.opacity = 1;
+    }, 400); // 400ms to match the CSS transition duration
+}
