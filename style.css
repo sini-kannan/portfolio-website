@@ -213,6 +213,48 @@ section {
     filter: none;
 }
 
+/* Experience */
+.experience-card {
+    margin-bottom: 40px;
+}
+
+.experience-title {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.company {
+    color: var(--accent);
+}
+
+.experience-date {
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.experience-details {
+    list-style: none;
+}
+
+.experience-details li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.experience-details li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
 /* Terminal Cards */
 .terminal-card {
     background-color: var(--card-bg);
